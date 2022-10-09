@@ -51,7 +51,8 @@ public class RandInfo {
     public int[] getsuccessandtotal() {
     	int[] example = new int[2];
     	example[1] = new Random().nextInt(15)+1;		//生成总次数
-    	example[0] = example[1]-new Random().nextInt(3)+1;//生成有效次数
+    	example[0] = example[1]-(new Random().nextInt(3)+1);//生成有效次数
+    	example[0] = example[0]<0 ? 0 : example[0];
     	return example;
     }
 }

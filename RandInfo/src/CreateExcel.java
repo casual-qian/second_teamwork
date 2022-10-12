@@ -14,7 +14,7 @@ public class CreateExcel {
             Person person = new Person();
             try {
              // 打开文件  
-                WritableWorkbook book = Workbook.createWorkbook(new File("class"+k+".xls"));  
+                WritableWorkbook book = Workbook.createWorkbook(new File("E:/class"+k+".xls"));  
              // 生成名为“sheet1”的工作表，参数0表示这是第一页  
                 WritableSheet sheet = book.createSheet("sheet1", 0);  
                 // 在Label对象的构造子中指名单元格位置是第一列第一行(0,0),单元格内容位学号  
